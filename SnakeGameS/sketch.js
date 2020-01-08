@@ -224,11 +224,11 @@ function keyPressed() {
     }
     switch (key){
         case '=':
-            speedMultiplier = speedMultiplier+1;
+            speedMultiplier = abs(speedMultiplier)+1;
     }
     switch (key){
         case '-':
-            speedMultiplier = speedMultiplier-1;
+            speedMultiplier = abs(speedMultiplier)-1;
     }
 
 }
@@ -280,10 +280,10 @@ function keyReleased() {
     }
     switch (key){
         case '=':
-            speedMultiplier = speedMultiplier+1;
+            speedMultiplier = abs(speedMultiplier);
     }
     switch (key){
         case '-':
-            speedMultiplier = speedMultiplier-1;
+            speedMultiplier = abs(speedMultiplier);
     }
 }
