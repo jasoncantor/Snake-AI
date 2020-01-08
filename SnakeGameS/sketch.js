@@ -111,7 +111,7 @@ function draw() {
             noStroke();
             textSize(blockSize*0.4);
             textAlign(LEFT, CENTER);
-            text("*Objectively False", 20, canvas.height - 30);
+            text("Super Speed Control", 20, canvas.height - 30);
             pop();
         }
         push();
@@ -222,6 +222,14 @@ function keyPressed() {
         case '0':
             speedMultiplier = 1;
     }
+    switch (key){
+        case '=':
+            speedMultiplier = speedMultiplier+1;
+    }
+    switch (key){
+        case '-':
+            speedMultiplier = speedMultiplier-1;
+    }
 
 }
 
@@ -229,6 +237,46 @@ function keyReleased() {
     switch (key) {
         case ' ':
             speedMultiplier = 2;
+    }
+    switch (key){
+        case '1':
+            speedMultiplier = 5;
+    }
+    switch (key){
+        case '2':
+            speedMultiplier = 10;
+    }
+    switch (key){
+        case '3':
+            speedMultiplier = 15;
+    }
+    switch (key){
+        case '4':
+            speedMultiplier = 20;
+    }
+    switch (key){
+        case '5':
+            speedMultiplier = 25;
+    }
+    switch (key){
+        case '6':
+            speedMultiplier = 30;
+    }
+    switch (key){
+        case '7':
+            speedMultiplier = 35;
+    }
+    switch (key){
+        case '8':
+            speedMultiplier = 40;
+    }
+    switch (key){
+        case '9':
+            speedMultiplier = 45;
+    }
+    switch (key){
+        case '0':
+            speedMultiplier = 1;
     }
     switch (key){
         case '=':
