@@ -154,7 +154,7 @@ function keyPressed() {
             s.velX = 0;
             s.velY = -1;
             pause = false;
-            frameRate(60);
+            frameRate(500);
             break;
         case DOWN_ARROW:
             s.velX = 0;
