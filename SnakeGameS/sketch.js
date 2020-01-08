@@ -154,7 +154,7 @@ function keyPressed() {
             s.velX = 0;
             s.velY = -1;
             pause = false;
-            frameRate(30);
+            frameRate(60);
             break;
         case DOWN_ARROW:
             s.velX = 0;
@@ -281,6 +281,7 @@ function keyReleased() {
     switch (key){
         case '=':
             speedMultiplier = abs(speedMultiplier);
+            frameRate(frameRate+10);
     }
     switch (key){
         case '-':
